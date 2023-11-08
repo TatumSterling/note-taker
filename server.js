@@ -9,13 +9,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 // html route
+
+
 app.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, './public/notes.html'))
 );
 
-app.get('/', (req, res) =>
-  res.sendFile(path.join(__dirname, './public/index.html'))
-);
+
 // api route
 app.get('/api/notes', (req, res) => {
   console.info(`${req.method} request received for notes`);
@@ -61,6 +61,10 @@ app.delete('/api/notes/:id', (req, res) => {
   res.json(db);
 }
 )
+
+app.get('*', (req, res) =>
+  res.sendFile(path.join(__dirname, './public/index.html'))
+);
 
 app.listen(PORT, () =>
   console.log(`Example app listening at http://localhost:${PORT}`)
