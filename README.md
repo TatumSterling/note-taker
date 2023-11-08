@@ -16,7 +16,7 @@ N/A
 ## Usage
 To use this application, install anything necessary from the installation section, then click the link below to be redirected to the app. Once opened, you can expect to see a notes page that will allow user to click get started, from there it will take the user to a notes entry page. To navigate, you may use the descriptive buttons to achieve tasks, save new notes, render old ones, and delete saved notes.
 
-![Note-taker-application](https://afternoon-island-28333-7a21086495e7.herokuapp.com/)
+https://afternoon-island-28333-7a21086495e7.herokuapp.com/
         
 ## License
 please refer to LICENSE in the repo
